@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon</title>
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge">
+	<meta name       ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset    ="utf-8"/> 
+	<link rel        ="stylesheet" href="pokemon.css">
+</head>
+<body>
+
+<h1>Le Jeu Pokémon </h1>
+
+<h3>Objectif :</h3>
+<p>On a eu pour objectif de créer un combat pokémon avec nos propres règles de combat grace à Vue.js et l'API pokémon</p>
+
+<h3>Besoins :</h3>
+<p>On aura besoin de SublimeText pour coder en HTML et Js
+<br>On aura besoin du framework Vue.js
+<br>On utilise aussi la bibliothèque VueTable2
+<br>On va aussi avoir besoins de la librairie Axios qui permet d'utiliser les API
+<br>Et de l'API Pokemon pour récuperer les données</p>
+
+<h3>Récupération des données :</h3>
+<p>On commence par recupérer les données du pokémon qui serviront au combat dans l'api pokémon (Fichier MonPoke.vue)
+<br>On récupère ces données grace à Axios</p>
+<p>On utilise une autre méthode pour récuperer toute les doonées d'un coup et on les met sous forme de tableau (Fichier MyVueTable.vue)
+<br>On créer le tableau dans la fonction data()</p>
+
+
+<ul class="top">
+  <li class="galleryItem">
+    <a class="caption" href="#1">
+      <img src="img/pokemon1.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#2">
+      <img src="img/pokemon2.PNG" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+  <h3>Le combat :</h3>
+  <p>On créer la fonction getPokes() qui permet le combat (Fichier App.vue)
+  <br>Le combat est en tour par tour
+  <br>Le pokémon le plus rapide attaque en premier
+  <br>La perte de vie se défini par : L'attaque du pokémon  * 1,5  -  La défense du pokémon qui subit</p>
+  <p>Ensuite dans le HTML on affiche tout cela et on appelle la méthode du combat avec le bouton "Combattez"</p>
+<ul>
+  <li class="galleryItem">
+    <a class="caption" href="#3">
+      <img src="img/pokemon3.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#4">
+      <img src="img/pokemon4.PNG" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+  <h3>Résultat :</h3>
+<ul>
+  <li class="galleryItem">
+    <a class="caption" href="#5">
+      <img src="img/pokemon5.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#6">
+      <img src="img/pokemon6.PNG" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+
+<h1><a href="../TestProgramme/pokemon/index.html" target="_blank">Vous pouvez tester ici</a></h1>
+    
+<!-- lightbox -->
+
+<div class="lightbox" id="1">
+   <div class="image">
+       <img src="img/pokemon1.PNG">
+          <a href="#6" class="prev"></a>
+          <a href="#" class="close"></a>
+          <a href="#2" class="next"></a>
+   </div>
+</div>
+<div class="lightbox" id="2">
+    <div class="image">
+         <img src="img/pokemon2.PNG">
+             <a href="#1" class="prev"></a>
+             <a href="#" class="close"></a>
+             <a href="#3" class="next"></a>
+        </div>
+    </div>
+	<div class="lightbox" id="3">
+    	<div class="image">
+            <img src="img/pokemon3.PNG">
+                <a href="#2" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#4" class="next"></a>
+       </div>
+   </div>
+	<div class="lightbox" id="4">
+    	<div class="image">
+            <img src="img/pokemon4.PNG">
+                <a href="#3" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#5" class="next"></a>
+       </div>
+   </div>
+	<div class="lightbox" id="5">
+    	<div class="image">
+            <img src="img/pokemon5.PNG">
+                <a href="#4" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#6" class="next"></a>
+       </div>
+   </div>
+   <div class="lightbox" id="6">
+    	<div class="image">
+            <img src="img/pokemon6.PNG">
+                <a href="#5" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#7" class="next"></a>
+       </div>
+   </div>
+
+
+
+</body>
+</html>

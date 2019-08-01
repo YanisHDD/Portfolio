@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billetterie Stade</title>
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge">
+	<meta name       ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset    ="utf-8"/> 
+	<link rel        ="stylesheet" href="foot.css">
+</head>
+<body>
+
+<h1>Billetterie stade</h1>
+
+<h3>Objectif :</h3>
+<p>Lors de mon second stage de BTS SIO j'ai eu pour mission avec mes camarades de l'ENC mettre en place un système de billetterie<br>
+Aidé par notre à distance par notre maitre de stage nous avons essayés de le mettre au points</p>
+
+<h3>Besoins :</h3>
+<p>On aura besoin de SublimeText pour coder en HTML, Js et Css
+<br>On aura besoin de la librairie Fabric js
+<br>On aura enfin besoins du cahier des charges fourni sur Skype 
+</p>
+
+<!-- Début de explications -->
+<h3>Mise en place</h3>
+<p>Nous avons commencé par analyser le cahier des charges
+<br> Petite précision : Le programme devra s'adapter à plusieurs stade</p>
+<p>Ensuite nous avons commencé à etudier Fabricjs grace aux démos disponible sur &nbsp;<a href="http://fabricjs.com/demos/">le site</a></p>
+<p>Par la suite nous avons tous essayé de mettre en place un systeme pour cliquer sur les sieges (créé en Frabricjs) et avoir le prix la zone... sans succés</p>
+<p>Néanmoins nous avons décidés de créer une interface qui facilitera la mise en place de ce système <br>
+Le créateur du stade pourra créer un nombre de siège passé en paramètre dans le code <br>
+Les sièges peuvent aussi être ajoutés un par un, supprimés, pivoter ou bien agrandis <br>
+On peux aussi séléctioner plusieurs sièges d'un coup pour les supprimés plus rapidement ou même les déplacer en groupe </p>
+
+
+
+
+<ul class="top">
+  <li class="galleryItem">
+    <a class="caption" href="#1">
+      <img src="img/cahierLoic.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#2">
+      <img src="img/categorieSiege.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#3">
+      <img src="img/matrice.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#4">
+      <img src="img/exemplesiege.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#5">
+      <img src="img/plusieurs.PNG" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+
+<h1><a href="../TestProgramme/StadeJf/index/HTML.html" target="_blank">Vous pouvez tester ici</a></h1>
+
+<!-- lightbox -->
+
+<div class="lightbox" id="1">
+   <div class="image">
+       <img src="img/cahierLoic.PNG">
+          <a href="#6" class="prev"></a>
+          <a href="#" class="close"></a>
+          <a href="#2" class="next"></a>
+   </div>
+</div>
+<div class="lightbox" id="2">
+    <div class="image">
+         <img src="img/categorieSiege.PNG">
+             <a href="#1" class="prev"></a>
+             <a href="#" class="close"></a>
+             <a href="#3" class="next"></a>
+        </div>
+    </div>
+	<div class="lightbox" id="3">
+    	<div class="image">
+            <img src="img/matrice.PNG">
+                <a href="#2" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#4" class="next"></a>
+       </div>
+   </div>
+	<div class="lightbox" id="4">
+    	<div class="image">
+            <img src="img/exemplesiege.PNG">
+                <a href="#3" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#5" class="next"></a>
+       </div>
+   </div>
+	<div class="lightbox" id="5">
+    	<div class="image">
+            <img src="img/plusieurs.PNG">
+                <a href="#4" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#6" class="next"></a>
+       </div>
+   </div>
+
+
+
+
+</body>
+</html>

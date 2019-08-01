@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voiture</title>
+	<meta http-equiv ="X-UA-Compatible" content="IE=edge">
+	<meta name       ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset    ="utf-8"/> 
+	<link rel        ="stylesheet" href="voiture.css">
+</head>
+<body>
+
+<h1>Jeu de Voiture</h1>
+
+<h3>Objectif :</h3>
+<p>Lors de mon premier stage de BTS SIO un collègue m'a mit au défi de reproduire son jeu de voiture pour me faire apprendre les évenement en javascript</p>
+
+<h3>Besoins :</h3>
+<p>On aura besoin de SublimeText pour coder en HTML, Js et Css
+</p>
+
+<!-- Début de explications -->
+<h3>Mise en place</h3>
+<p>J'ai commencé par me documenter sur les évenements
+<br> C'est qui se passe sur une touche du clavier ou de la souris</p>
+<p>Ensuite mon collègue m'a lancé sur la piste des canvas il fallait donc que je fasse bouger un canvas</p>
+<p>Par la suite j'ai commencé à créer mon Objet voiture avec sa vitesse, sa taille ect...</p>
+<p>J'ai donc affecté 4 évenements à ma voiture : <br>
+- Marche Avant <br>
+- Marche Arrière <br>
+- Tourner à Droite <br>
+- Tourner à Gauche <br></p>
+<p>Et en dernier un fonction pour rafraichir la position</p>
+
+
+
+
+<ul class="top">
+  <li class="galleryItem">
+    <a class="caption" href="#1">
+      <img src="img/constructeurVoiture.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#2">
+      <img src="img/voiture.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#3">
+      <img src="img/bougeVoiture.PNG" alt="Landscape image">
+    </a>
+  </li>
+  <li class="galleryItem">
+    <a class="caption" href="#4">
+      <img src="img/position.PNG" alt="Landscape image">
+    </a>
+  </li>
+</ul>
+
+<h1><a href="../TestProgramme/Voiture/index.html" target="_blank">Vous pouvez tester ici</a></h1>
+
+<!-- lightbox -->
+
+<div class="lightbox" id="1">
+   <div class="image">
+       <img src="img/constructeurVoiture.PNG">
+          <a href="#6" class="prev"></a>
+          <a href="#" class="close"></a>
+          <a href="#2" class="next"></a>
+   </div>
+</div>
+<div class="lightbox" id="2">
+    <div class="image">
+         <img src="img/voiture.PNG">
+             <a href="#1" class="prev"></a>
+             <a href="#" class="close"></a>
+             <a href="#3" class="next"></a>
+        </div>
+    </div>
+	<div class="lightbox" id="3">
+    	<div class="image">
+            <img src="img/bougeVoiture.PNG">
+                <a href="#2" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#4" class="next"></a>
+       </div>
+   </div>
+<div class="lightbox" id="4">
+      <div class="image">
+            <img src="img/position.PNG.PNG">
+                <a href="#3" class="prev"></a>
+                <a href="#" class="close"></a>
+                <a href="#5" class="next"></a>
+       </div>
+   </div>
+
+
+
+</body>
+</html>
