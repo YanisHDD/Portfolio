@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Spinnaker);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700italic);
+@import url(https://fonts.googleapis.com/css?family=Aclonica);
+* {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class*="col-"]{
+    color:hsla(185, 7%, 68%, 1);
+    margin:5px;
+    font-family: 'Spinnaker', cursive;
+}
+body{
+  width:100%; 
+  padding:0;
+  margin:0;
+  font-size:18px;
+  color:hsla(185, 7%, 68%, 1);
+  background:hsla(180, 40%, 92%, 1);
+}
+.wrap{
+  margin:0 auto;
+  width:90%;
+  background:hsla(0,0%, 16%,1);
+  & .container{
+    width:70%;
+    margin:0 auto;
+    padding-bottom:30px;
+  }
+}
+.head{
+  height:3em;
+  background:hsla(0,0%,11%,1);
+}
+header{
+    top:0;
+    min-height:3em;
+    width:100%;
+    line-height:2em;
+    text-align:center;
+    border-bottom:5px solid hsla(204, 33%, 59%, 1);
+    & div#logo{
+      color:hsla(204, 33%, 59%, 1);
+      margin-left:0;
+      font-size:1.3em;
+      & span.lt{
+        color:hsla(185, 7%, 68%, 1);
+      }
+    }
+   & div#iss {
+     text-align:center;
+     font-size:1em;
+     margin:8px 0;
+     color:hsla(204, 33%, 59%, 1);
+  }
+  & div#date{
+    color:hsla(185, 7%, 68%, 1);
+    font-size:1em;
+    margin:8px 0;
+  }
+}
+p#md{
+  color:hsla(185, 7%, 84%, 1);
+  font-size:1.5em;
+  background:hsla(204, 33%, 59%, 1);
+  margin:5px auto;
+  padding:1.5em;
+  text-align:center;
+  font-family: 'Aclonica', sans-serif;
+   & span.day{
+     font-size:1.8em;
+  }
+}
+p#md.dark{
+  background:hsla(204, 33%, 59%, 1);
+  padding:1.8em;
+  & span.mon{
+    font-size:1.8em;
+  }
+}
+p{
+  line-height:1.6em;
+}
+h4{
+ color: hsla(204, 33%, 59%, 1);
+ font-size: 25px;
+}
+ul{
+  width: 99%;
+}
+
+#imgone{
+  margin:10px auto;
+  background:url('../img/ia.jpg') no-repeat center;
+  width: 200px;
+  height: auto;
+  background-size: cover;
+}
+#imgtwo{
+  margin:10px auto;
+  background:url('../img/ia.jpg') no-repeat center;
+  width: 200px;
+  background-size: cover;
+  max-height:11.8em;
+}
+#imgthr{
+  margin:10px auto;
+  background:url('../img/ia.jpg') no-repeat center;
+  width: 200px;
+  background-size: cover;
+  max-height:11.8em;
+}
+#imgfour{
+  margin:10px auto;
+  background:url('../img/ia.jpg') no-repeat center;
+  width: 200px;
+  background-size: cover;
+  max-height:11.8em;
+}
+#imgfiv{
+  margin:10px auto;
+  background:url('../img/ia.jpg') no-repeat center;
+  width: 200px;
+  background-size: cover;
+  max-height:11.8em;
+}
+.arrow{
+    border: 1px solid hsla(204, 33%, 59%, 1);
+    font-size:1.1em;
+    padding:.04em .35em;
+    cursor:pointer;
+}
+h4#top{
+  border-top:4px solid hsla(204, 33%, 59%, 1);
+  margin:5px -2px;
+  padding-top:.8em;
+  width:60%;
+}
+h4#spec{
+  margin:2px auto;
+}
+#top2{
+  background: hsla(204, 33%, 59%, 1);
+  margin:5px 0;
+  height:4px;
+  border:none;
+  width:60%;
+  float:right;
+}
+section#quote{
+  background:hsla(90, 1%, 27%,1);
+  padding-top:.5em;
+  padding-right:.5em;
+  padding-bottom:0;
+  margin-bottom:50px;
+  
+  & p:first-letter{
+    font-size: 17rem;
+    float:left;
+    line-height: 70%;
+    margin: 0 .25em 0 .15em;
+    color:hsla(204, 33%, 59%, 1);
+  }
+  & p{
+    margin:20px 2em;
+    font-size:1.5em;
+    font-family: 'Playfair Display', serif;
+  }
+  & span.a{
+    margin:5px 100px;
+    color:hsla(204, 33%, 59%, 1);
+    font-size:.8em;
+  }
+}
+footer{
+  background:hsla(0,0%,11%,1);
+  padding:0;
+  margin:0;
+  height:3em;
+
+}
+@media all  and (min-width:830px) and (max-width: 1030px){
+  #imgone, #imgtwo, #imgthr, #imgfour{
+    max-height:10.5em;
+  }
+}
+@media all  and (min-width:830px) and (max-width: 945px){
+  section#quote span.a{
+    margin:5px 180px;
+  }
+}
+@media all and (max-width: 830px){
+  section#quote p{
+    font-size:1.2em;
+      &:first-letter{
+        font-size: 10rem;
+        line-height: 3%;
+        margin: .3em .1em .12em 0;
+      }
+      & span.a{
+        margin:5px 20px;
+      }
+   }
+}
+/*
+12 flex value columns for mix/matching different widths in a row. 
+Not all have been used in this demo (only equal width cols used)
+*/
+@media all and (min-width: 830px){
+    .row{
+        display: -webkit-box;
+        display: -moz-box; 
+        display:-ms-flexbox; 
+        display:-webkit-flex; 
+        display:flex;
+        width:100%;
+        margin-bottom:20px;
+    }
+    [class*="col-"]:last-child{
+                margin-right:0;
+    }
+    .col-1{
+        -webkit-box-flex: 1;
+        -moz-box-flex:1;
+        -ms-flex:1;
+        -webkit-flex:1;
+        flex:1;
+    }
+    .col-2{
+        -webkit-box-flex: 2;
+        -moz-box-flex:2;
+        -ms-flex:2;
+        -webkit-flex:2;
+        flex:2;
+    }
+    .col-3{
+        -webkit-box-flex: 3;
+        -moz-box-flex:3;
+        -ms-flex:3;
+        -webkit-flex:3;
+        flex:3;
+    }
+    .col-4{
+        -webkit-box-flex: 4;
+        -moz-box-flex:4;
+        -ms-flex:4;
+        -webkit-flex:4;
+        flex:4;
+    }
+    .col-5{
+        -webkit-box-flex: 5;
+        -moz-box-flex:5;
+        -ms-flex:5;
+        -webkit-flex:5;
+        flex:5;
+    }
+    .col-6{
+        -webkit-box-flex: 6;
+        -moz-box-flex:6;
+        -ms-flex:6;
+        -webkit-flex:6;
+        flex:6;
+    }
+    .col-7{
+        -webkit-box-flex: 7;
+        -moz-box-flex:7;
+        -ms-flex:7;
+        -webkit-flex:7;
+        flex:7;
+    }
+    .col-8{
+        -webkit-box-flex: 8;
+        -moz-box-flex:8;
+        -ms-flex:8;
+        -webkit-flex:8;
+        flex:8;
+    }
+    .col-9{
+        -webkit-box-flex: 9;
+        -moz-box-flex:9;
+        -ms-flex:9;
+        -webkit-flex:9;
+        flex:9;
+    }
+    .col-10{
+        -webkit-box-flex: 10;
+        -moz-box-flex:10;
+        -ms-flex:10;
+        -webkit-flex:10;
+        flex:10;
+    }
+    .col-11{
+        -webkit-box-flex: 11;
+        -moz-box-flex:11;
+        -ms-flex:11;
+        -webkit-flex:11;
+        flex:11;
+    }
+    .col-12{
+        -webkit-box-flex: 12;
+        -moz-box-flex:12;
+        -ms-flex:12;
+        -webkit-flex:12;
+        flex:12;
+        margin-bottom:0;
+       
+    }
+}
